@@ -1,0 +1,133 @@
+﻿@charset "UTF-8";
+
+* {margin: 0;padding: 0;list-style: none;}
+html,body {background: #FFFFFF;font: normal 15px "Microsoft YaHei";}
+#top {position: absolute;top: 0;left: 0;right: 0;height: 70px;background-color: #007eed;}
+#top_logo {width:30%;float: left;vertical-align: middle;height: 68px;line-height: 68px;padding: 1px 1px 1px 10px; background:url(../index_top_leftbg.jpg) no-repeat;}
+#top_logo img{width:60px; height:60px; display:block; float:left; padding-top:5px; margin-right:10px;}
+#top_logo span{font-size:24px; font-weight:bold; color:#fff;}
+
+.top_center{width:42%; height:70px; background:url(../index_top_centerbg.jpg) no-repeat; float:left; text-align:right; padding-top:20px; position:relative;}
+.top_center input{width:220px; height:30px; line-height:30px; padding-left:5px; opacity:0.9;}
+.top_center a{ position:absolute; height:30px; line-height:30px; font-size:20px; color:#4eaceb; top:20px; right:10px;}
+
+#top_links {width: 25%;height: 70px;float: right;line-height: 65px;color: #ADADAD;line-height: 65px;position: relative; overflow:hidden;}
+#top_op {width:48px; height:70px; float:right; padding-right:10px;}
+#top_op i{font-size:28px; color:#fff; display:block; float:left;}
+#top_op span{color:#fff; height:70px; line-height:40px; display:block; float:left;}
+#top_links a:link,#nav_links a:visited,#nav_links a:hover,#nav_links a:active
+	{list-style: none;text-decoration: none;color: #fff;}
+#top_links a:hover {list-style: none;text-decoration: underline;color: #fff;}
+#top_close { max-width:320px; height:50px; margin-top:10px; padding-left:10px; float:right;vertical-align: text-top; overflow:hidden;}
+
+#top_close a img{padding-top:3px; display:block; float:left;  margin-right:10px;}
+#top_close a span{max-width:220px; overflow:hidden;font-size:12px; color:#fff; line-height:50px;  display:block; float:left; margin-right:10px;}
+#top_close a{ display:block; float:right; font-size:20px; height:50px; line-height:50px; margin-right:10px;}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.profile_details ul li ul.dropdown-menu.drp-mnu {padding: 1em; min-width: 190px; top: 122%;left: 0%;}
+.open > .dropdown-menu {display: block;}
+ul.dropdown-menu li {margin-left: 0;width: 100%;padding: 0;background: #fff;}
+ul.dropdown-menu.drp-mnu li {list-style-type: none;padding: 3px 0;}
+.profile_details ul li {list-style-type: none;position: relative;}
+
+
+#side {position: absolute;left: 0;top: 70px;bottom: 25px;width: 210px;
+    overflow: hidden;
+    border-right: 2px solid #005db0; background:#eafeff;
+/* 	border-right: 5px solid #DDDDDD; */}
+#main {
+	position: absolute;
+	left: 215px;
+    top: 70px;
+	bottom: 25px;
+	right: 0px;
+	width: auto;
+	z-index: 2;
+	overflow: hidden;
+}
+#top_nav {
+	position: fixed;
+	width: 100%;
+	top: 70px;
+	left: 0px;
+	height: 25px;
+	line-height: 25px;
+	color: #8A8A8A;
+	font-size: 12px;
+	border-bottom: 1px solid #EDEDED;
+}
+.time{width:210px; height:25px; float:left;}
+.time i{font-size:14px; color:#999; margin-left:10px; display:block; float:left;}
+.time span{ display:block; float:left; height:25px; line-height:25px;}
+#here_area a{color:#007eed;}
+#left_menu {
+    width: 80px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: #eafeff
+}
+#left_menu_cnt {width: 210px;position: absolute;top: 0px;bottom: 0px;left: 80px;overflow: auto;background: #e8f7ff; border-right:1px solid #005db0;}
+#left_menu_cnt #nav_module {position: fixed;padding-left: 0px;background: #e8f7ff;}
+#left_menu_cnt #nav_resource {margin-top: 60px;overflow: auto;}
+
+.gncd{width:210px; height:30px; line-height:30px; text-align:center; color:#fff; background:url(../gncd_bg.png) no-repeat;}
+
+#TabPage2 li {padding: 5px 0;cursor: pointer;}
+.selected {background: #FFF;cursor: pointer;}
+
+/* 本例子css */
+		.picScroll-top{ margin:0 auto;  width:80px;   position:relative;   z-index:100;}
+		.picScroll-top .hd{ overflow:hidden;  height:50px;  padding:0 10px;  }
+		.picScroll-top .hd .prev{ display:block;  width:60px; height:50px;  overflow:hidden;
+cursor:pointer; background:url(../left_top.png) no-repeat center;}
+		.picScroll-top .hd .next{ display:block; width:60px; height:50px; float:right; cursor:pointer; background:url(../left_btn.png) no-repeat center; position:absolute; bottom:-50px;}
+		.picScroll-top .hd .prevStop{ background-position:-60px -100px;  }
+		.picScroll-top .hd .nextStop{ background-position:-60px -140px;  }
+		.picScroll-top .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+		.picScroll-top .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url(../icoCircle.gif) 0 -9px no-repeat; }
+		.picScroll-top .hd ul li.on{ background-position:0 0; }
+		.picScroll-top .bd{ padding:0px;   }
+		.picScroll-top .bd ul{ overflow:hidden; zoom:1; }
+		.picScroll-top .bd ul li{ text-align:center; zoom:1; color:#fff;}
+		
+		.picScroll-top .bd ul li a{color:#fff; text-decoration:none;}
+		.picScroll-top .bd ul li i{font-size:32px;}
+		.picScroll-top .bd ul li a:active {color: #0000ff;}
+		.picScroll-top .bd ul li .title{ line-height:24px; }
+		.picScroll-top .bd ul li .title a{color:#fff; text-decoration:none; font-size:12px;}
+        .picScroll-top .bd ul li .title a:active{color:#006;}
+
+
+.foot{width:100%; height:25px; line-height:25px; text-align:center; background:#005db0; position:fixed; bottom:0; color:#fff; font-size:12px;}
+
+.btn {
+    background-color: #82ceef;
+    border: 0px;
+    height: 24px;
+    font-size: 12px;
+    width:60px;
+}

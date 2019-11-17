@@ -1,0 +1,25 @@
+.onShow {
+    background: url(../image/reg1.gif) no-repeat;
+    padding-left: 25px;
+    height: 20px;
+    line-height: 20px;
+}
+.onFocus {
+    background: #E9F0FF url(../image/reg2.gif) no-repeat;
+    padding-left: 25px;
+    height: 20px;
+    line-height: 20px;
+}
+.onError {
+    background: #FFF2E9 url(../image/reg3.gif) no-repeat;
+    padding-left: 25px;
+    height: 20px;
+    line-height: 20px;
+}
+.onSuccess {
+    background: #E9FFEB url(../image/reg4.gif) no-repeat;
+    padding-left: 25px;
+    height: 20px;
+    line-height: 20px;
+}
+.onLoad{background:#E9FFEB url(../image/loading.gif) no-repeat 3px 3px; padding-left:25px; height:20px; line-height:20px;} 
